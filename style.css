@@ -1,0 +1,445 @@
+:root {
+    --nav-text: #ffffff;
+    --nav-muted: rgba(255, 255, 255, 0.7);
+    --nav-accent: #00e5ff;
+    --nav-bg-glass: rgba(0, 0, 0, 0.35);
+}
+
+body {
+    margin: 0;
+    padding-bottom: 80px;
+    color: white;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("https://images.unsplash.com/photo-1641337221253-fdc7237f6b61?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Zalando Sans semiExpanded", sans-serif;
+    filter: grayscale(60%);
+}
+
+.hero h1 {
+    font-size: 150px;
+    font-weight: 700;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hero p {
+    font-size: 25px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.nav-small {
+    display: none;
+
+
+
+}
+
+/* ==========================
+       NAVBAR BASE
+    ========================== */
+.app-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+}
+
+.app-navbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+}
+
+.app-brand {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    color: var(--nav-text);
+    text-decoration: none;
+}
+
+.app-brand:hover {
+    color: var(--nav-text);
+}
+
+/* ==========================
+       NAV ITEMS
+    ========================== */
+.app-nav {
+    display: flex;
+    gap: 30px;
+    font-family: "Zalando Sans semiExpanded", sans-serif;
+    font-optical-sizing: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-nav a {
+    color: var(--nav-muted);
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+
+.app-nav a i {
+    font-size: 18px;
+    display: none;
+}
+
+.app-nav a:hover {
+    color: var(--nav-text);
+}
+
+.app-nav a.active {
+    color: var(--nav-text);
+}
+
+.app-nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: var(--nav-accent);
+}
+
+/* ==========================
+       MOBILE BOTTOM TRANSPARENT NAV
+    ========================== */
+@media (max-width: 768px) {
+    .app-navbar {
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        background: var(--nav-bg-glass);
+        backdrop-filter: blur(10px);
+    }
+
+    .app-navbar-inner {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .app-brand {
+        display: none;
+    }
+
+    .app-nav {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .app-nav a {
+        flex-direction: column;
+        font-size: 12px;
+
+    }
+
+    .app-nav a i {
+        font-size: 20px;
+        display: block;
+
+    }
+
+    .app-nav a.active::after {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .nav-small {
+        display: flex;
+        background-color: #02001f;
+    }
+
+    .brand-small {
+        color: whitesmoke;
+        font-weight: 700;
+        font-family: "Zalando Sans Expanded", sans-serif;
+        font-size: 25px;
+
+
+    }
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: #e5e7eb;
+    color: #374151;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.feature {
+    background: linear-gradient(135deg, #6366f1, #3b82f6);
+    color: white;
+}
+
+.feature .tag {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.card-modern {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: #fff;
+   
+}
+
+.card-modern:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-modern img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-modern:hover img {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btn-modern {
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.6rem 1.8rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-modern:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+}
+
+
+@media (max-width: 768px) {
+    .card-modern img {
+        height: 180px;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    .card-div-1 {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card-modern img {
+        height: 160px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .card-div-1 {
+        margin-top: 20px;
+    }
+
+}
+
+.cards-s-1 {
+    height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+.card-1-sec {
+    justify-content: center;
+    justify-content: center;
+    background-color: #182848;
+}
+
+.card-div-1 {
+    top: 50px;
+}
+
+
+
+
+ footer {
+     letter-spacing: 0.3px;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /* Footer links with hover animation */
+ .footer-link {
+     color: #9ca3af;
+     text-decoration: none;
+     display: block;
+     margin-bottom: 0.5rem;
+     font-size: 0.95rem;
+     transition: all 0.3s ease;
+ }
+
+ .footer-link i {
+     transition: transform 0.3s ease;
+ }
+
+ .footer-link:hover {
+     color: #dc3545;
+ }
+
+ .footer-link:hover i {
+     transform: translateX(4px);
+ }
+
+ /* Social icons hover */
+ .social-link {
+     color: #9ca3af;
+     font-size: 1.3rem;
+     transition: transform 0.3s, color 0.3s;
+ }
+
+ .social-link:hover {
+     color: #dc3545;
+     transform: scale(1.2) rotate(10deg);
+ }
+
+ /* Button hover animation */
+ .btn-hover {
+     transition: transform 0.3s, background-color 0.3s;
+ }
+
+ .btn-hover:hover {
+     transform: translateY(-3px);
+     background-color: #b02a37;
+ }
+
+
+
+ /* From Uiverse.io by cssbuttons-io */
+ button {
+     --color: #560bad;
+     font-family: inherit;
+     display: inline-block;
+     width: 8em;
+     height: 2.6em;
+     line-height: 2.5em;
+     margin: 20px;
+     position: relative;
+     cursor: pointer;
+     overflow: hidden;
+     border: 2px solid var(--color);
+     transition: color 0.5s;
+     z-index: 1;
+     font-size: 17px;
+     border-radius: 6px;
+     font-weight: 500;
+     color: var(--color);
+     padding-bottom: 8px;
+ }
+
+ button:before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     background: var(--color);
+     height: 150px;
+     width: 200px;
+     border-radius: 50%;
+ }
+
+ button:hover {
+     color: #fff;
+ }
+
+ button:before {
+     top: 100%;
+     left: 100%;
+     transition: all 0.7s;
+ }
+
+ button:hover:before {
+     top: -30px;
+     left: -30px;
+ }
+
+ button:active:before {
+     background: #3a0ca3;
+     transition: background 0s;
+ }
+ .c-img{
+    filter: brightness(65%);
+ }

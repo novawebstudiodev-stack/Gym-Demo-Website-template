@@ -1,0 +1,145 @@
+        :root {
+            --accent: #00e5ff;
+            --glass-bg: rgba(255, 255, 255, 0.15);
+            --glass-border: rgba(255, 255, 255, 0.25);
+            --text-main: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.75);
+        }
+
+        body {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438");
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--text-main);
+        }
+
+        /* =========================
+       FILTER BUTTONS
+    ========================= */
+        .filter-bar {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-main);
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            backdrop-filter: blur(8px);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--accent);
+            color: #000;
+            border-color: var(--accent);
+        }
+
+        /* =========================
+       GRID
+    ========================= */
+        .advanced-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        /* =========================
+       CARD BASE
+    ========================= */
+        .app-card {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .app-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-featured {
+            grid-column: span 2;
+        }
+
+        .card-featured img {
+            height: 260px;
+        }
+
+        .card-tall img {
+            height: 280px;
+        }
+
+        /* =========================
+       CARD BODY
+    ========================= */
+        .card-body-custom {
+            padding: 22px;
+        }
+
+        .card-title-custom {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .card-text-custom {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin: 10px 0 18px;
+        }
+
+        /* =========================
+       HOVER OVERLAY
+    ========================= */
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .app-card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .overlay-btn {
+            background: var(--accent);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        /* =========================
+       MOBILE FIXES
+    ========================= */
+        @media (max-width: 768px) {
+            .card-featured {
+                grid-column: span 1;
+            }
+        }

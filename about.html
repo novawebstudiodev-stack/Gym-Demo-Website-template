@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About FitZone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Zalando Sans SemiExpanded", sans-serif;
+            background-color: rgb(8, 8, 48);
+        }
+
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: #ff5722;
+            margin-bottom: 1rem;
+        }
+
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Gradient Button */
+        .btn-gradient {
+            background-color: rgb(3, 24, 95);
+            border: none;
+            color: #fff;
+            transition: 0.3s;
+
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #ff6a00, #f04);
+        }
+
+        /* Input & Textarea Custom */
+        .form-control:focus {
+            box-shadow: none;
+            background-color: #010036 !important;
+        }
+
+        /* Modal Body Padding */
+        .modal-body {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .footer-link {
+            color: #9ca3af;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link i {
+            transition: transform 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #dc3545;
+        }
+
+        .footer-link:hover i {
+            transform: translateX(4px);
+        }
+
+        /* Social icons hover */
+        .social-link {
+            color: #9ca3af;
+            font-size: 1.3rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-link:hover {
+            color: #dc3545;
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        /* Button hover animation */
+        .btn-hover {
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            background-color: #b02a37;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar nav-small">
+        <div class="container-fluid">
+            <span class="brand-small ">YK Creations</span>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+    <nav class="app-navbar">
+        <div class="app-navbar-inner container-fluid">
+
+            <a href="#" class="app-brand">YK Creations</a>
+
+            <ul class="app-nav">
+                <li>
+                    <a href="index.html">
+                        <i class="bi bi-house"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html"  class="active">
+                        <i class="bi bi-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pricing.html">
+                        <i class="bi bi-grid"></i>
+                        <span>Pricing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <i class="bi bi-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <!-- About & Mission/Vision Section -->
+    <section class="py-5 " style="  background-color: rgb(8, 8, 48);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="font-size: 40px;">Who We Are</h2>
+                <p style="font-size: 20px;">FitZone is a modern fitness studio committed to helping members achieve
+                    their health and performance
+                    goals. Our expert trainers, state-of-the-art equipment, and supportive community make fitness
+                    enjoyable, effective, and safe.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4 h-100">
+                        <h4 class="mb-3" style="font-size: 25px;">Our Mission</h4>
+                        <p style="font-size: 23px;">To empower every individual to live a healthier, stronger, and more
+                            confident life through
+                            customized training, expert guidance, and a motivating community.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card card-custom p-4 h-100">
+                        <h4 class="mb-3" style="font-size: 25px;">Our Vision</h4>
+                        <p style="font-size: 23px;">To become the most trusted fitness destination for athletes and
+                            fitness enthusiasts,
+                            providing world-class equipment, programs, and support that inspire real results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="font-size: 35px;">Our Facilities</h2>
+                <p style="font-size: 23px;">FitZone offers a wide range of training areas designed for all fitness
+                    levels, from beginners to
+                    professional athletes.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center">
+                        <div class="feature-icon">🏋️</div>
+                        <h5 style="font-size: 25px;">Gym / Weight Training</h5>
+                        <p style="font-size: 23px;">Free weights, machines, and strength zones for building muscle and
+                            improving endurance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center">
+                        <div class="feature-icon">🔥</div>
+                        <h5 style="font-size: 25px;">CrossFit & Functional Training</h5>
+                        <p style="font-size: 23px;">High-intensity workouts to boost power, agility, and overall
+                            fitness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center">
+                        <div class="feature-icon">🏃</div>
+                        <h5 style="font-size: 25px;">Cardio & Endurance</h5>
+                        <p style="font-size: 23px;">Treadmills, bikes, and HIIT stations for stamina and fat burning.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center">
+                        <div class="feature-icon">🧘</div>
+                        <h5 style="font-size: 25px;">Yoga & Mobility</h5>
+                        <p style="font-size: 23px;"> Dedicated space for stretching, flexibility, and mental focus.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center">
+                        <div class="feature-icon">💆</div>
+                        <h5 style="font-size: 25px;">Recovery & Rehab</h5>
+                        <p style="font-size: 23px;">Physiotherapy, foam rolling, and recovery tools to prevent injuries.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4 h-100 text-center">
+                        <div class="feature-icon">🏅</div>
+                        <h5 style="font-size: 25px;">Sports-Specific Training</h5>
+                        <p>Sprinting lanes, jump pits, and agility zones for athletes and competitive training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section class="py-5" style="  background-color: rgb(8, 8, 48);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Premium Features</h2>
+                <p>FitZone goes beyond regular gyms to provide unique advantages for serious fitness enthusiasts and
+                    athletes.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100">
+                        <h5>Athlete Sponsorship Programs</h5>
+                        <p>We support promising athletes like <em>Rohan Sharma</em> and <em>Anika Desai</em> with
+                            memberships, coaching, and gear to help them compete at higher levels.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100">
+                        <h5>Personalized Performance Tracking</h5>
+                        <p>Tailored progress reports and analytics for members such as <em>Aarav Patel</em> to monitor
+                            strength, endurance, and fitness goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100">
+                        <h5>Sports-Specific Training & Elite Coaching</h5>
+                        <p>Programs designed for sprinters, jumpers, and weightlifters with elite coaching guidance for
+                            optimal results.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-custom p-4 h-100">
+                        <h5>Nutrition & Diet Planning</h5>
+                        <p>Customized meal plans and supplementation advice to support performance, recovery, and
+                            overall wellness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Ready to Transform Your Fitness?</h2>
+            <p class="mb-4">Join FitZone today and take the first step toward a stronger, healthier you.</p>
+            <!-- Button to Open Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Contact Us
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content text-center " style="background-color: #010036;">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title text-warning" id="contactModalLabel">Get In Touch</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Left: Contact Info -->
+                                <div class="col-md-5 mb-4 mb-md-0">
+                                    <h6 class="text-warning">Phone</h6>
+                                    <p>+91 98765 43210</p>
+
+                                    <h6 class="text-warning">Email</h6>
+                                    <p>powerhousegym@email.com</p>
+
+                                    <h6 class="text-warning">Address</h6>
+                                    <p>2nd Floor, Fitness Plaza,<br>Pune, Maharashtra</p>
+                                </div>
+
+                                <!-- Right: Contact Form -->
+                                <div class="col-md-7">
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control border-0" placeholder="Your Name"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control border-0" placeholder="Your Email"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea class="form-control border-0" placeholder="Your Message" rows="4"
+                                                required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <footer class="bg-black text-light pt-5">
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <!-- Brand -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="fw-bold text-uppercase">Gym</h3>
+                        <p class="text-secondary mt-3">
+                            Transform your body. Build real strength.
+                            Professional coaching, modern equipment, and a focused environment.
+                        </p>
+
+                        <div class="mt-3 d-flex gap-3">
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="fw-semibold text-uppercase">Explore</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Home</a></li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Membership</a>
+                            </li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Programs</a>
+                            </li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Trainers</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-2 col-md-6">
+                        <h5 class="fw-semibold text-uppercase">Services</h5>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Personal
+                                    Training</a>
+                            </li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Strength
+                                    Training</a>
+                            </li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Fat Loss</a>
+                            </li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-chevron-right me-1"></i>Athletic
+                                    Conditioning</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact + CTA -->
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="fw-semibold text-uppercase">Get Started</h5>
+                        <p class="text-secondary mt-3 mb-2">Book a free trial or talk to our coach.</p>
+
+                        <p class="mb-1"><i class="bi bi-geo-alt-fill me-1"></i>Pune, Maharashtra</p>
+                        <p class="mb-1"><i class="bi bi-telephone-fill me-1"></i>+91 98765 43210</p>
+                        <p class="mb-3"><i class="bi bi-envelope-fill me-1"></i>ironcoregym@gmail.com</p>
+
+                        <a href="#" class="btn btn-danger w-100 fw-semibold btn-hover">
+                            Book Free Trial
+                        </a>
+                    </div>
+
+                </div>
+
+                <hr class="border-secondary my-4" />
+
+                <!-- Bottom -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3">
+                    <span class="text-secondary">
+                        © <span id="year"></span> Fitzone Gym. All Rights Reserved.
+                    </span>
+                    <span class="text-secondary mt-2 mt-md-0">
+                        Designed & Developed by Nova Web Studios
+                    </span>
+                </div>
+
+            </div>
+        </footer>
+
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
