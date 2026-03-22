@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Learn about our gym, our mission, and our expert trainers dedicated to helping you build strength, confidence, and a healthier lifestyle.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.JPG">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.JPG">
+
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon" href="logo.JPG">
+
+    <!-- Optional (fallback) -->
+    <link rel="shortcut icon" href="logo.JPG">
     <title>About FitZone</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -56,7 +65,7 @@
         /* Input & Textarea Custom */
         .form-control:focus {
             box-shadow: none;
-            background-color: #010036 !important;
+            background-color: #d3d2ff !important;
         }
 
         /* Modal Body Padding */
@@ -137,7 +146,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="about.html"  class="active">
+                    <a href="about.html" class="active">
                         <i class="bi bi-info-circle"></i>
                         <span>About</span>
                     </a>
@@ -253,7 +262,78 @@
             </div>
         </div>
     </section>
+    <!-- Coaches Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" style="font-size: 35px;">Meet Our Coaches</h2>
+                <p style="font-size: 20px;">
+                    Our certified trainers bring years of experience, helping members achieve real and lasting results.
+                </p>
+            </div>
 
+            <div class="row g-4">
+
+                <!-- Coach 1 -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <img src="https://via.placeholder.com/120" class="rounded-circle mb-3 mx-auto" alt="Coach">
+                        <h5 style="font-size: 22px;">Rahul Verma</h5>
+                        <p class="text-muted">Strength & Conditioning Coach</p>
+
+                        <p style="font-size: 18px;">
+                            8+ years experience in muscle building and fat loss transformation programs.
+                        </p>
+
+                        <ul class="list-unstyled mt-3" style="font-size: 16px;">
+                            <li>✔ 500+ Clients Trained</li>
+                            <li>✔ Certified NSCA Trainer</li>
+                            <li>✔ Powerlifting Specialist</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coach 2 -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <img src="https://via.placeholder.com/120" class="rounded-circle mb-3 mx-auto" alt="Coach">
+                        <h5 style="font-size: 22px;">Sneha Iyer</h5>
+                        <p class="text-muted">Yoga & Mobility Expert</p>
+
+                        <p style="font-size: 18px;">
+                            Focuses on flexibility, injury prevention, and mental wellness training.
+                        </p>
+
+                        <ul class="list-unstyled mt-3" style="font-size: 16px;">
+                            <li>✔ 6+ Years Experience</li>
+                            <li>✔ 300+ Clients Improved Mobility</li>
+                            <li>✔ Certified Yoga Instructor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coach 3 -->
+                <div class="col-md-4">
+                    <div class="card card-custom text-center p-4 h-100">
+                        <img src="https://via.placeholder.com/120" class="rounded-circle mb-3 mx-auto" alt="Coach">
+                        <h5 style="font-size: 22px;">Arjun Patel</h5>
+                        <p class="text-muted">CrossFit & HIIT Coach</p>
+
+                        <p style="font-size: 18px;">
+                            Specializes in high-performance training and athletic conditioning.
+                        </p>
+
+                        <ul class="list-unstyled mt-3" style="font-size: 16px;">
+                            <li>✔ 7+ Years Experience</li>
+                            <li>✔ State-Level Athlete</li>
+                            <li>✔ 400+ Transformations</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- Premium Features Section -->
     <section class="py-5" style="  background-color: rgb(8, 8, 48);">
         <div class="container">
@@ -321,18 +401,19 @@
                                 <!-- Left: Contact Info -->
                                 <div class="col-md-5 mb-4 mb-md-0">
                                     <h6 class="text-warning">Phone</h6>
-                                    <p>+91 98765 43210</p>
+                                    <p>+91 96071 10339</p>
 
                                     <h6 class="text-warning">Email</h6>
-                                    <p>powerhousegym@email.com</p>
+                                    <p>novawebstudio.dev@gmail.com</p>
 
                                     <h6 class="text-warning">Address</h6>
-                                    <p>2nd Floor, Fitness Plaza,<br>Pune, Maharashtra</p>
+                                    <p>Pune, Maharashtra</p>
                                 </div>
 
                                 <!-- Right: Contact Form -->
                                 <div class="col-md-7">
-                                    <form>
+                                    <form
+                                        action="mailto:your@email.com?subject=Gym%20Membership&body=I%20want%20to%20join%20the%20gym">
                                         <div class="mb-3">
                                             <input type="text" class="form-control border-0" placeholder="Your Name"
                                                 required>
@@ -340,10 +421,6 @@
                                         <div class="mb-3">
                                             <input type="email" class="form-control border-0" placeholder="Your Email"
                                                 required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <textarea class="form-control border-0" placeholder="Your Message" rows="4"
-                                                required></textarea>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Send</button>
                                     </form>
@@ -443,6 +520,16 @@
                 </div>
 
             </div>
+        </footer>
+        <footer class="text-center py-3" style="background-color: #000; font-size: 14px;">
+            <p class="mb-1 text-secondary">
+                © 2026 FitZone Gym
+            </p>
+            <p class="mb-0">
+                <a href="mailto:novawebstudio.dev@gmail.com" style="color: #ff5722; text-decoration: none;">
+                    Designed & Developed by Nova Web Studio
+                </a>
+            </p>
         </footer>
 
     </section>
