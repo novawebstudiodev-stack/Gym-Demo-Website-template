@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://novawebstudio-gym-demo.netlify.app/sitemap.xml
